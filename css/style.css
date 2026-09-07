@@ -763,8 +763,8 @@ section {
 
 .about-photos {
   position: relative;
-  width: 340px;
-  height: 480px;
+  width: 480px;
+  height: 620px;
   justify-self: end;
 }
 
@@ -784,15 +784,15 @@ section {
 }
 
 .photo-2 {
-  top: 90px;
-  left: 100px;
+  top: 160px;
+  left: 220px;
   transform: rotate(8deg);
   z-index: 2;
 }
 
 .photo-3 {
-  top: 220px;
-  left: 20px;
+  top: 400px;
+  left: 60px;
   transform: rotate(-5deg);
   z-index: 3;
 }
@@ -800,7 +800,7 @@ section {
 @media (max-width: 900px) {
   .about-photos {
     width: 100%;
-    height: 380px;
+    height: 500px;
     justify-self: center;
     margin-top: 32px;
   }

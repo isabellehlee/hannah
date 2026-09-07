@@ -764,7 +764,7 @@ section {
 .about-photos {
   position: relative;
   width: 500px;
-  height: 560px;
+  height: 600px;
   justify-self: end;
   transform: translateX(30px);
 }
@@ -792,8 +792,8 @@ section {
 }
 
 .photo-3 {
-  top: 280px;
-  left: 170px;
+  top: 320px;
+  left: 130px;
   transform: rotate(-5deg);
   z-index: 3;
 }

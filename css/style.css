@@ -756,3 +756,48 @@ section {
   }
   .hero { padding-top: 120px; }
 }
+/* Override the existing about-layout column ratio so text is wider than photos */
+.about-layout {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.about-photos {
+  position: relative;
+  height: 420px;
+}
+
+.about-photos .photo {
+  position: absolute;
+  width: 220px;
+  height: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.photo-1 {
+  top: 0;
+  left: 10px;
+  transform: rotate(-7deg);
+  z-index: 1;
+}
+
+.photo-2 {
+  top: 60px;
+  left: 70px;
+  transform: rotate(5deg);
+  z-index: 2;
+}
+
+.photo-3 {
+  top: 150px;
+  left: 20px;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+
+@media (max-width: 900px) {
+  .about-photos {
+    height: 320px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

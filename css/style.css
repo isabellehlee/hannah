@@ -125,6 +125,15 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
+body.is-home .brand-mark {
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+
+body.is-home .site-header.is-solid .brand-mark {
+  opacity: 1;
+}
 .nav-links {
   display: flex;
   gap: 40px;

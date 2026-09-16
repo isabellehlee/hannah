@@ -186,11 +186,7 @@ h1, h2, h3, h4 {
   background-size: cover;
   background-position: center 30%;
 }
-.hero-name,
-.hero-subtitle,
-.hero-tagline {
-  color: #faf9f6;
-}
+
 .hero-name {
   font-family: 'Anton', 'Cormorant Garamond', sans-serif;
   font-size: clamp(84px, 17vw, 220px);
@@ -215,7 +211,7 @@ h1, h2, h3, h4 {
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: var(--ink-soft);
+  color: rgba(250, 249, 246, 0.85);
 }
 
 .hero-tagline {
@@ -223,7 +219,7 @@ h1, h2, h3, h4 {
   font-size: 14px;
   letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: rgba(250, 249, 246, 0.85);;
 }
 
 .hero-scroll {

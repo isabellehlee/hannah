@@ -113,8 +113,9 @@ h1, h2, h3, h4 {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--ink);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,9 +183,7 @@ h1, h2, h3, h4 {
   justify-content: center;
   text-align: center;
   padding: 120px 24px 64px;
-  background-image: linear-gradient(rgba(28, 27, 25, 0.45), rgba(28, 27, 25, 0.45)), url('../images/home/hero-bg.jpg');
-  background-size: cover;
-  background-position: center 30%;
+  background: var(--ink);
 }
 
 .hero-name {
@@ -300,23 +299,17 @@ h1, h2, h3, h4 {
 .page-hero {
   padding: 132px 0 48px;
   border-bottom: 1px solid var(--line);
-  background: var(--ink);
 }
 
 .page-hero h1 {
   font-size: clamp(44px, 6.4vw, 72px);
   margin-top: 10px;
-  color: var(--bg);
-}
-
-.page-hero .eyebrow {
-  color: rgba(250, 249, 246, 0.7);
 }
 
 .page-hero p {
   margin-top: 18px;
   max-width: 560px;
-  color: rgba(250, 249, 246, 0.75);
+  color: var(--ink-soft);
   font-size: 17px;
 }
 

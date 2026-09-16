@@ -137,7 +137,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 4px;
-  color: var(--bg);
 }
 
 .nav-links a::after {
@@ -147,10 +146,24 @@ h1, h2, h3, h4 {
   bottom: 0;
   width: 0;
   height: 1px;
-  background: var(--bg);
+  background: var(--ink);
   transition: width 0.3s var(--ease);
 }
+.site-header.is-solid .nav-links a {
+  color: var(--bg);
+}
 
+.site-header.is-solid .nav-links a::after {
+  background: var(--bg);
+}
+
+body.is-home .site-header:not(.is-solid) .nav-links a {
+  color: var(--bg);
+}
+
+body.is-home .site-header:not(.is-solid) .nav-links a::after {
+  background: var(--bg);
+}
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;

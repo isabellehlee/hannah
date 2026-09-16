@@ -113,9 +113,8 @@ h1, h2, h3, h4 {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--bg);
-  color: var(--ink);
-  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--bg);
   display: flex;
   align-items: center;
   justify-content: center;

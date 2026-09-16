@@ -761,6 +761,24 @@ section {
     position: static;
     max-width: 320px;
   }
+
+    .about-photos {
+    width: 100%;
+    max-width: 320px;
+    height: 380px;
+    justify-self: center;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .about-photos .photo {
+    width: 140px !important;
+    max-width: 140px !important;
+  }
+
+  .photo-1 { top: 0; left: 10px; }
+  .photo-2 { top: 90px; left: 150px; }
+  .photo-3 { top: 190px; left: 70px; }
 }
 
 @media (max-width: 560px) {

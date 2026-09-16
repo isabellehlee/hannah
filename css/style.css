@@ -724,32 +724,16 @@ section {
   .container { padding: 0 28px; }
   .nav-inner { padding: 0 28px; }
 
-  .nav-links {
-    position: fixed;
-    top: var(--nav-height);
-    left: 0;
-    right: 0;
-    background: var(--bg);
-    flex-direction: column;
-    gap: 0;
-    border-bottom: 1px solid var(--line);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s var(--ease);
-  }
-
-  .nav-links.is-open {
-    max-height: 320px;
+    .nav-links {
+    gap: 16px;
   }
 
   .nav-links a {
-    display: block;
-    padding: 18px 28px;
-    border-top: 1px solid var(--line);
+    font-size: 11px;
   }
 
   .nav-toggle {
-    display: flex;
+    display: none;
   }
 
   .category-split {

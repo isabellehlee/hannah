@@ -174,17 +174,18 @@ body.is-home .site-header.is-solid .brand-mark {
 .nav-links a {
   display: block;
   position: relative;
-  padding: 16px 40px 16px 48px;
+  padding: 16px 28px 16px 32px;
   font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-align: right;
   color: var(--bg);
+  opacity: 0;
   transition: background 0.2s var(--ease), padding-right 0.25s var(--ease);
 }
 
 .nav-links a:hover {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .nav-links a:hover {
@@ -194,13 +195,32 @@ body.is-home .site-header.is-solid .brand-mark {
 .nav-links a::after {
   content: '';
   position: absolute;
-  right: 40px;
+  right: 28px;
   bottom: 11px;
   width: 0;
   height: 1px;
   background: var(--bg);
   transition: width 0.3s var(--ease);
 }
+
+@keyframes navLinkIn {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-links.is-open a {
+  animation: navLinkIn 0.35s var(--ease) forwards;
+}
+
+.nav-links.is-open a:nth-child(1) { animation-delay: 0.04s; }
+.nav-links.is-open a:nth-child(2) { animation-delay: 0.09s; }
+.nav-links.is-open a:nth-child(3) { animation-delay: 0.14s; }
 
 .site-header.is-solid .nav-links a {
   color: var(--bg);
@@ -933,12 +953,12 @@ section {
     gap: 8px;
   }
 
- .nav-links a {
-    padding: 14px 24px 14px 32px;
+  .nav-links a {
+    padding: 14px 18px 14px 24px;
   }
 
   .nav-links a::after {
-    right: 24px;
+    right: 18px;
   }
    
 }

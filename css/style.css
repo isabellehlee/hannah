@@ -804,14 +804,14 @@ section {
     max-width: 320px;
   }
 
-  .about-photos {
+ .about-photos {
     width: 100%;
     max-width: 320px;
     height: 320px;
     position: relative;
     justify-self: center;
     transform: none;
-    margin: 32px auto;
+    margin: 12px auto 32px;
   }
 
   .about-photos .photo {

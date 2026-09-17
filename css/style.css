@@ -878,3 +878,36 @@ section {
     gap: 8px;
   }
 }
+
+@media (max-width: 640px) {
+  .category-panel {
+    aspect-ratio: 3 / 4;
+  }
+
+  .category-panel-number {
+    top: 20px;
+    left: 20px;
+    font-size: 13px;
+  }
+
+  .category-panel-overlay {
+    padding: 28px 24px;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.25) 45%,
+      rgba(0, 0, 0, 0.05) 75%,
+      transparent 100%
+    );
+  }
+
+  .category-panel-label .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+  }
+
+  .category-panel-label h2 {
+    font-size: clamp(30px, 9vw, 40px);
+    margin-top: 6px;
+  }
+}

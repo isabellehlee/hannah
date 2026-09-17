@@ -807,7 +807,7 @@ section {
     gap: 8px;
   }
 }
-/* Override the existing about-layout column ratio so text is wider than photos */
+
 .about-layout {
   grid-template-columns: 1.15fr 0.85fr;
 }
@@ -847,13 +847,4 @@ section {
   left: 130px;
   transform: rotate(-5deg);
   z-index: 3;
-}
-
-@media (max-width: 900px) {
-  .about-photos {
-    width: 100%;
-    height: 500px;
-    justify-self: center;
-    transform: none;
-  }
 }

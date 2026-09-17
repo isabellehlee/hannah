@@ -767,8 +767,8 @@ section {
     gap: 16px;
   }
 
-  .nav-links a {
-    font-size: 11px;
+   .nav-links a {
+    font-size: 13px;
   }
 
   .nav-toggle {
@@ -838,8 +838,8 @@ section {
   }
 
   .nav-links a {
-    font-size: 9px;
-    letter-spacing: 0.06em;
+    font-size: 11px;
+    letter-spacing: 0.04em;
   }
 
   .brand {

@@ -804,10 +804,10 @@ section {
     .about-photos {
     width: 100%;
     max-width: 320px;
-    height: 380px;
+    height: 320px;
     justify-self: center;
     transform: none;
-    margin: 0 auto;
+    margin: 32px auto;
   }
 
   .about-photos .photo {
@@ -826,6 +826,20 @@ section {
 
   .about-photos {
     height: 320px;
+  }
+     .about-info h4 {
+    font-size: 11px;
+  }
+
+  .about-info p {
+    font-size: 13px;
+  }
+     .page-hero {
+    padding-bottom: 24px;
+  }
+
+  section {
+    padding: 32px 0;
   }
 }
 

@@ -134,18 +134,46 @@ body.is-home .brand-mark {
 body.is-home .site-header.is-solid .brand-mark {
   opacity: 1;
 }
+
 .nav-links {
+  position: fixed;
+  top: var(--nav-height);
+  right: 0;
+  width: 240px;
+  max-width: 80vw;
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 0;
   list-style: none;
+  background: var(--ink);
+  padding: 12px 0;
+  z-index: 99;
+  transform: translateY(-12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .nav-links a {
+  display: block;
+  position: relative;
+  padding: 14px 28px;
   font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  position: relative;
-  padding-bottom: 4px;
+  color: var(--bg);
+  transition: background 0.2s var(--ease);
+}
+
+.nav-links a:hover {
+  background: rgba(250, 249, 246, 0.08);
 }
 
 .nav-links a::after {
@@ -179,13 +207,14 @@ body.is-home .site-header:not(.is-solid) .nav-links a::after {
 }
 
 .nav-toggle {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
   padding: 8px;
+  z-index: 101;
 }
 
 .nav-toggle span {
@@ -193,7 +222,20 @@ body.is-home .site-header:not(.is-solid) .nav-links a::after {
   height: 1px;
   background: var(--ink);
   display: block;
+  transition: background 0.3s var(--ease), transform 0.3s var(--ease), opacity 0.3s var(--ease);
 }
+
+.site-header.is-solid .nav-toggle span {
+  background: var(--bg);
+}
+
+body.is-home .site-header:not(.is-solid) .nav-toggle span {
+  background: var(--bg);
+}
+
+.nav-toggle.is-open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
 /* ---------------- Hero ---------------- */
 
@@ -772,10 +814,6 @@ section {
 
   .nav-links a {
     font-size: 12px;
-  }
-
-  .nav-toggle {
-    display: none;
   }
 
   .category-split {

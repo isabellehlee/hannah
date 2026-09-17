@@ -146,20 +146,23 @@ body.is-home .site-header.is-solid .brand-mark {
   position: fixed;
   top: var(--nav-height);
   right: 0;
-  width: 240px;
+  width: max-content;
+  min-width: 200px;
   max-width: 80vw;
   display: flex;
   flex-direction: column;
   gap: 0;
   list-style: none;
-  background: var(--ink);
-  padding: 12px 0;
+  background: rgba(28, 27, 25, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 20px 0;
   z-index: 99;
   transform: translateY(-12px);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(250, 249, 246, 0.1);
 }
 
 .nav-links.is-open {
@@ -171,12 +174,17 @@ body.is-home .site-header.is-solid .brand-mark {
 .nav-links a {
   display: block;
   position: relative;
-  padding: 14px 28px;
+  padding: 16px 40px 16px 48px;
   font-size: 14px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+  text-align: right;
   color: var(--bg);
-  transition: background 0.2s var(--ease);
+  transition: background 0.2s var(--ease), padding-right 0.25s var(--ease);
+}
+
+.nav-links a:hover {
+  padding-right: 30px;
 }
 
 .nav-links a:hover {
@@ -186,13 +194,14 @@ body.is-home .site-header.is-solid .brand-mark {
 .nav-links a::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
+  right: 40px;
+  bottom: 11px;
   width: 0;
   height: 1px;
-  background: var(--ink);
+  background: var(--bg);
   transition: width 0.3s var(--ease);
 }
+
 .site-header.is-solid .nav-links a {
   color: var(--bg);
 }
@@ -208,9 +217,10 @@ body.is-home .site-header:not(.is-solid) .nav-links a {
 body.is-home .site-header:not(.is-solid) .nav-links a::after {
   background: var(--bg);
 }
+
 .nav-links a:hover::after,
 .nav-links a.active::after {
-  width: 100%;
+  width: 20px;
 }
 
 .nav-toggle {
@@ -922,6 +932,15 @@ section {
   .brand {
     gap: 8px;
   }
+
+ .nav-links a {
+    padding: 14px 24px 14px 32px;
+  }
+
+  .nav-links a::after {
+    right: 24px;
+  }
+   
 }
 
 @media (max-width: 640px) {

@@ -795,8 +795,9 @@ section {
     order: 0;
   }
 
-  .about-layout {
+ .about-layout {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .about-portrait {

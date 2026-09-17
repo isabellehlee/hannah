@@ -771,7 +771,7 @@ section {
   }
 
   .nav-links a {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .nav-toggle {
@@ -811,7 +811,7 @@ section {
     position: relative;
     justify-self: center;
     transform: none;
-    margin: 12px auto 32px;
+    margin: 10px auto 32px;
   }
 
   .about-photos .photo {
@@ -831,11 +831,11 @@ section {
   }
 
   .about-info h4 {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .about-info p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .page-hero {

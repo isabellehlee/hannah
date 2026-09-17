@@ -113,6 +113,20 @@ h1, h2, h3, h4 {
     backdrop-filter: none;
     border-bottom: none;
   }
+
+  /* No solid dark bar behind the header anymore on these pages,
+     so keep the icon/links dark instead of switching to white on scroll */
+  body:not(.is-home) .site-header.is-solid .nav-toggle span {
+    background: var(--ink);
+  }
+
+  body:not(.is-home) .site-header.is-solid .nav-links a {
+    color: var(--ink);
+  }
+
+  body:not(.is-home) .site-header.is-solid .nav-links a::after {
+    background: var(--ink);
+  }
 }
 
 .brand {

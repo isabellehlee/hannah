@@ -655,7 +655,7 @@ section {
 
 .about-info h4 {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
@@ -664,7 +664,7 @@ section {
 }
 
 .about-info p {
-  font-size: 15px;
+  font-size: 18px;
   color: var(--ink-soft);
   margin: 0;
 }

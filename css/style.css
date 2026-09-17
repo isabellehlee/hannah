@@ -771,7 +771,7 @@ section {
   }
 
   .nav-links a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .nav-toggle {
@@ -811,7 +811,7 @@ section {
     position: relative;
     justify-self: center;
     transform: none;
-    margin: 10px auto 32px;
+    margin: 4px auto 32px;
   }
 
   .about-photos .photo {
@@ -865,7 +865,7 @@ section {
   }
 
   .nav-links a {
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 0.04em;
   }
 
@@ -873,4 +873,3 @@ section {
     gap: 8px;
   }
 }
-

@@ -960,6 +960,12 @@ section {
   .nav-links a::after {
     right: 18px;
   }
+
+ .nav-links {
+    min-width: unset;
+    width: max-content;
+    padding: 14px 0;
+  }
    
 }
 

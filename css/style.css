@@ -119,14 +119,6 @@ h1, h2, h3, h4 {
   body:not(.is-home) .site-header.is-solid .nav-toggle span {
     background: var(--ink);
   }
-
-  body:not(.is-home) .site-header.is-solid .nav-links a {
-    color: var(--ink);
-  }
-
-  body:not(.is-home) .site-header.is-solid .nav-links a::after {
-    background: var(--ink);
-  }
 }
 
 .brand {

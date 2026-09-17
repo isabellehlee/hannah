@@ -699,7 +699,14 @@ section {
   height: auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+.about-copy p {
+    font-size: 16px;
+    margin-bottom: 14px;
+ }
 
+  .about-photos {
+    height: 320px;
+  }
 .photo-1 {
   top: 0;
   left: 40px;

@@ -812,7 +812,7 @@ section {
     position: relative;
     justify-self: center;
     transform: none;
-    margin: 4px auto 32px;
+    margin: 12px auto 32px;
   }
 
   .about-photos .photo {
@@ -830,7 +830,11 @@ section {
     font-size: 16px;
     margin-bottom: 14px;
   }
-
+   
+  .about-info {
+    row-gap: 12px;
+  }
+   
   .about-info h4 {
     font-size: 12px;
   }

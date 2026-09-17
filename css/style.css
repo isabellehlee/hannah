@@ -680,46 +680,7 @@ section {
   border: 1px solid #ecd9b8;
   padding: 8px 14px;
 }
-.about-layout {
-  grid-template-columns: 1.15fr 0.85fr;
-}
 
-.about-photos {
-  position: relative;
-  width: 500px;
-  height: 600px;
-  justify-self: end;
-  transform: translateX(30px);
-}
-
-.about-photos .photo {
-  position: absolute;
-  width: 220px !important;
-  max-width: 220px !important;
-  height: auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.photo-1 {
-  top: 0;
-  left: 40px;
-  transform: rotate(-10deg);
-  z-index: 1;
-}
-
-.photo-2 {
-  top: 160px;
-  left: 260px;
-  transform: rotate(8deg);
-  z-index: 2;
-}
-
-.photo-3 {
-  top: 320px;
-  left: 130px;
-  transform: rotate(-5deg);
-  z-index: 3;
-}
 /* ---------------- Footer ---------------- */
 
 .site-footer {
@@ -763,11 +724,11 @@ section {
   .container { padding: 0 28px; }
   .nav-inner { padding: 0 28px; }
 
-    .nav-links {
+  .nav-links {
     gap: 16px;
   }
 
-   .nav-links a {
+  .nav-links a {
     font-size: 15px;
   }
 
@@ -801,40 +762,41 @@ section {
     max-width: 320px;
   }
 
-    .about-photos {
+  .about-photos {
     width: 100%;
     max-width: 320px;
     height: 320px;
+    position: relative;
     justify-self: center;
     transform: none;
     margin: 32px auto;
   }
 
   .about-photos .photo {
+    position: absolute;
     width: 140px !important;
     max-width: 140px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   }
 
-  .photo-1 { top: 0; left: 10px; }
-  .photo-2 { top: 90px; left: 150px; }
-  .photo-3 { top: 190px; left: 70px; }
+  .photo-1 { top: 0; left: 10px; transform: rotate(-10deg); z-index: 1; }
+  .photo-2 { top: 90px; left: 150px; transform: rotate(8deg); z-index: 2; }
+  .photo-3 { top: 190px; left: 70px; transform: rotate(-5deg); z-index: 3; }
 
-   .about-copy p {
+  .about-copy p {
     font-size: 16px;
     margin-bottom: 14px;
- }
-
-  .about-photos {
-    height: 320px;
   }
-     .about-info h4 {
+
+  .about-info h4 {
     font-size: 11px;
   }
 
   .about-info p {
     font-size: 13px;
   }
-     .page-hero {
+
+  .page-hero {
     padding-bottom: 24px;
   }
 

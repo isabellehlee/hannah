@@ -638,7 +638,7 @@ section {
   margin-bottom: 20px;
   color: var(--ink-soft);
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 1.6;
   max-width: 580px;
@@ -679,6 +679,46 @@ section {
   background: #f7edda;
   border: 1px solid #ecd9b8;
   padding: 8px 14px;
+}
+.about-layout {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.about-photos {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  justify-self: end;
+  transform: translateX(30px);
+}
+
+.about-photos .photo {
+  position: absolute;
+  width: 220px !important;
+  max-width: 220px !important;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.photo-1 {
+  top: 0;
+  left: 40px;
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+
+.photo-2 {
+  top: 160px;
+  left: 260px;
+  transform: rotate(8deg);
+  z-index: 2;
+}
+
+.photo-3 {
+  top: 320px;
+  left: 130px;
+  transform: rotate(-5deg);
+  z-index: 3;
 }
 
 /* ---------------- Footer ---------------- */

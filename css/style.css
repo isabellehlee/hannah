@@ -107,8 +107,11 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 901px) {
-  .site-header {
-    display: none;
+  .site-header,
+  .site-header.is-solid {
+    background: transparent;
+    backdrop-filter: none;
+    border-bottom: none;
   }
 }
 

@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open');
     });
+    
     navLinks.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => navLinks.classList.remove('is-open'));
     });

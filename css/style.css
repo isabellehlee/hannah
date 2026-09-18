@@ -121,6 +121,14 @@ h1, h2, h3, h4 {
   }
 }
 
+@media (min-width: 901px) {
+  .footer-inner {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .brand {
   display: flex;
   align-items: center;
